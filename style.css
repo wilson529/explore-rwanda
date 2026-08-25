@@ -1,1 +1,248 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
+body {
+    font-family: Arial, sans-serif;
+    background: #f5f7f5;
+    color: #172117;
+    line-height: 1.6;
+}
+
+.navbar {
+    width: 100%;
+    padding: 18px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: white;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+}
+
+.logo {
+    text-decoration: none;
+    color: #176b3a;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.navbar nav {
+    display: none;
+}
+
+.hero {
+    min-height: 75vh;
+    display: flex;
+    align-items: center;
+    padding: 40px 20px;
+    background:
+        linear-gradient(rgba(0, 40, 20, 0.55), rgba(0, 20, 10, 0.65)),
+        url("https://images.unsplash.com/photo-1548013146-72479768bada?auto=format&fit=crop&w=1200&q=80");
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+
+.hero-content {
+    width: 100%;
+    max-width: 700px;
+}
+
+.eyebrow {
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+    opacity: 0.9;
+}
+
+.hero h1 {
+    font-size: 42px;
+    line-height: 1.1;
+    margin-bottom: 18px;
+}
+
+.hero p {
+    font-size: 17px;
+    margin-bottom: 25px;
+}
+
+.search-box {
+    display: flex;
+    width: 100%;
+    background: white;
+    border-radius: 10px;
+    padding: 6px;
+}
+
+.search-box input {
+    flex: 1;
+    border: none;
+    outline: none;
+    padding: 14px;
+    font-size: 15px;
+}
+
+.search-box button,
+.card-content button,
+.planner-box button {
+    border: none;
+    background: #176b3a;
+    color: white;
+    padding: 13px 18px;
+    border-radius: 7px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.section {
+    padding: 60px 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.section-heading {
+    margin-bottom: 30px;
+}
+
+.section-heading h2,
+.about h2 {
+    font-size: 32px;
+}
+
+.destination-grid {
+    display: grid;
+    gap: 20px;
+}
+
+.destination-card {
+    background: white;
+    border-radius: 14px;
+    overflow: hidden;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+}
+
+.destination-image {
+    height: 210px;
+    background-size: cover;
+    background-position: center;
+}
+
+.kigali {
+    background-image: url("https://images.unsplash.com/photo-1601722683966-5d8c4b8f6f02?auto=format&fit=crop&w=900&q=80");
+}
+
+.musanze {
+    background-image: url("https://images.unsplash.com/photo-1516026672322-bc52d61a55d5?auto=format&fit=crop&w=900&q=80");
+}
+
+.rubavu {
+    background-image: url("https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=900&q=80");
+}
+
+.akagera {
+    background-image: url("https://images.unsplash.com/photo-1516426122078-c23e76319801?auto=format&fit=crop&w=900&q=80");
+}
+
+.card-content {
+    padding: 20px;
+}
+
+.card-content h3 {
+    font-size: 23px;
+    margin-bottom: 8px;
+}
+
+.card-content p {
+    color: #667066;
+    margin-bottom: 15px;
+}
+
+.planner {
+    background: #eaf3ec;
+    max-width: none;
+}
+
+.planner-box {
+    max-width: 600px;
+    margin: auto;
+    background: white;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+}
+
+.planner-box label {
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 7px;
+    font-weight: bold;
+}
+
+.planner-box input,
+.planner-box select {
+    width: 100%;
+    padding: 13px;
+    border: 1px solid #ddd;
+    border-radius: 7px;
+    font-size: 15px;
+}
+
+.planner-box button {
+    width: 100%;
+    margin-top: 20px;
+}
+
+#tripResult {
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+.about {
+    text-align: center;
+}
+
+.about p {
+    max-width: 700px;
+    margin: 15px auto;
+    color: #667066;
+}
+
+footer {
+    text-align: center;
+    padding: 30px 20px;
+    background: #102217;
+    color: white;
+}
+
+@media (min-width: 768px) {
+
+    .navbar nav {
+        display: flex;
+        gap: 25px;
+    }
+
+    .navbar nav a {
+        text-decoration: none;
+        color: #172117;
+        font-weight: bold;
+    }
+
+    .hero {
+        min-height: 85vh;
+        padding-left: 8%;
+    }
+
+    .hero h1 {
+        font-size: 64px;
+    }
+
+    .destination-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}

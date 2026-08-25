@@ -35,6 +35,16 @@ body {
     display: none;
 }
 
+.menu-toggle {
+    display: block;
+    border: none;
+    background: transparent;
+    color: #176b3a;
+    font-size: 28px;
+    cursor: pointer;
+    padding: 4px;
+}
+
 .hero {
     min-height: 78vh;
     display: flex;
